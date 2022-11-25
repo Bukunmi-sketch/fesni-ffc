@@ -18,7 +18,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>House Fellowships</title>
+    <title>House 100 level</title>
     <?php include '../Includes/metatags.php' ; ?>
 
               <link rel="stylesheet" type="text/css" href="../Resources/css/left.css"> 
