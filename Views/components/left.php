@@ -103,6 +103,11 @@
            <a href="send-textmsg" class="menu-item"> <h3>Add Offering</h3> </a>
            <a href="send-textmsg" class="menu-item"> <h3> Add Donations</h3> </a>
          </div>
+
+         <a href="frontpage.php" class="menu-item">
+            <h3>Manage Front-Page</h3>
+          </a>
+
                      
 <!---------------------------------------------------------- EDIT ADMIN ACCOUNT ------------------------------------------------------->     
         <a href="adminedit" class="menu-item">
