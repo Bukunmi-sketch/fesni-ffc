@@ -18,9 +18,8 @@ require '../Includes/db.inc.php';
    public function login($firstname,$lastname,$memberid){
     try{
        
-         $sql="SELECT * FROM members WHERE firstname =:firstname AND lastname =:lastname AND rollid =:memberid";
+         $sql="SELECT * FROM members WHERE lastname =:lastname AND rollid =:memberid";
          $stmt= $this->db->prepare($sql);
-         $stmt->bindParam(':firstname', $firstname);
          $stmt->bindParam(':lastname', $lastname);
          $stmt->bindParam(':memberid', $memberid);
          $stmt->execute();
@@ -35,7 +34,7 @@ require '../Includes/db.inc.php';
                    'email' =>     $returned_row['email'],
                    'lastname' =>  $returned_row['lastname'],
                    'date' =>      $returned_row['date'],
-                   'password'=>   $returned_row['password']
+                   'rollid' =>      $returned_row['rollid'],
                    ];
                    
            //  echo "password is correct";
