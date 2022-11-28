@@ -18,6 +18,9 @@
     $birthday= $userInfo['birthday'];
     $birthmonth= $userInfo['birthmonth'];
     $rollid= $userInfo['rollid'];
+    $residence= $userInfo['residence'];
+    $origin= $userInfo['origin'];
+    $ministry= $userInfo['ministry'];
 
    
    // include './components/activity.php';
@@ -84,12 +87,14 @@
 -->
      <div class="see-info"> 
     
-    <p class="locate"><i class="fa fa-map-marker"></i> Ibadan,Nigeria </p>
-    <p class="locate"><i class="fa fa-phone"></i> +2348051942341</p> 
-    <p class="locate"><i class="fa fa-envelope"></i> Olarindebukunmi@gmail.com</p>
+    <p class="locate"><i class="fa fa-map-marker"></i> <?php echo "{$residence}" ;?>   </p>
+    <p class="locate"><i class="fa fa-phone"></i> <?php echo "{$mobile}" ;?> </p> 
+    <p class="locate"><i class="fa fa-envelope"></i> <?php echo "{$email}" ;?> /p>
     <p class="locate"><i class="fa fa-globe"></i> http://www.bucuzzi.dx.am/b</p>
-    <p class="locate"><i class="fa fa-birthday-cake"></i> September 12 </p> 
+    <p class="locate"><i class="fa fa-birthday-cake"></i><?php echo ucfirst("{$birthmonth}");?> <?php echo "{$birthmonth}" ;?></p> 
     <p class="locate"><i class="fa fa-heart"></i>music ,football,coding</p>
+    <p class="locate"><i class="fa fa-heart"></i> <?php echo "{$department}" ;?> </p>
+    <p class="locate"><i class="fa fa-heart"></i><?php echo "{$ministry}" ;?> </p>
     
     </div>
 </div>

@@ -35,11 +35,14 @@ class User{
           'rollid' =>      $returned_row['rollid'],
           'mobile' =>      $returned_row['mobile'],
           'birthday' =>      $returned_row['birthday'],
-          'minsitry' =>      $returned_row['minsitry'],
+          'ministry' =>      $returned_row['ministry'],
           'gender' =>      $returned_row['gender'],
           'department' =>      $returned_row['department'],
           'birthmonth' =>      $returned_row['birthmonth'],
-          'fellowship' =>      $returned_row['fellowship']
+          'fellowship' =>      $returned_row['fellowship'],
+          'residence' =>      $returned_row['residence'],
+          'origin' =>      $returned_row['origin'],
+          
           ];
     }catch(PDOException $e){
       echo $e->getMessage();
