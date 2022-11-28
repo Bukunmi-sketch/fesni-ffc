@@ -32,7 +32,14 @@ class User{
           'firstname'=>   $returned_row['firstname'],  
           'lastname' =>   $returned_row['lastname'],
           'date' =>       $returned_row['date'],
-          'rollid' =>      $returned_row['rollid']
+          'rollid' =>      $returned_row['rollid'],
+          'mobile' =>      $returned_row['mobile'],
+          'birthday' =>      $returned_row['birthday'],
+          'minsitry' =>      $returned_row['minsitry'],
+          'gender' =>      $returned_row['gender'],
+          'department' =>      $returned_row['department'],
+          'birthmonth' =>      $returned_row['birthmonth'],
+          'fellowship' =>      $returned_row['fellowship']
           ];
     }catch(PDOException $e){
       echo $e->getMessage();

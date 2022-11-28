@@ -11,7 +11,13 @@
     $firstname=$userInfo['firstname'];
     $lastname= $userInfo['lastname'];
     $registered_date=$userInfo['date'];
-   
+    $mobile= $userInfo['mobile'];
+    $birthday= $userInfo['birthday'];
+    $department= $userInfo['department'];
+    $fellowship= $userInfo['fellowship'];
+    $birthday= $userInfo['birthday'];
+    $birthmonth= $userInfo['birthmonth'];
+    $rollid= $userInfo['rollid'];
 
    
    // include './components/activity.php';
@@ -20,7 +26,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Home,welcome <?php echo "{$firstname} {$lastname} ";?></title>
+    <title>Home,welcome <?php echo "{$firstname} {$birthday} ";?></title>
     <?php include '../Includes/metatags.php' ; ?>
 
               <link rel="stylesheet" type="text/css" href="../Resources/css/left.css"> 
@@ -47,7 +53,7 @@
                             8=>"orangered",
                             9=>"#cecece"
                         ];
-                       
+                     
                         $key=array_rand($arr);
                         ?>
 
@@ -62,10 +68,10 @@
 
 <!-- ----details abotut me---------->
 <div class="see-landing-details">
-       <p class="profile-name" > Hey there, <br> I'm <span> Olarinde Bukunmi</span>  </p> 
-       <p class="about" id="about">Digital Entrepreneur,Fullstack web developer developer & Software Engineer</p>
+       <p class="profile-name" > Welcome ,  <?php echo ucfirst("{$firstname}");?> <?php echo ucfirst("{$lastname}");?> </p> 
+       <!--  <p class="about" id="about">Digital Entrepreneur,Fullstack web developer developer & Software Engineer</p>
        
-       <!-- social media connections-->
+        social media connections
        <div class="see-connect"> 
            <a href="https://mobile.facebook.com/bukunmi.olarinde.9" ><i class="fa fa-facebook-f"></i></a>
            <a href="https://www.Instagram.com/bukunmiiie" ><i class="fa fa-instagram"></i></a> 
@@ -75,7 +81,7 @@
            <a href="https://www.pinterest.com/bukunmiiie" ><i class="fa fa-pinterest"></i></a> 
            <a href="mailto:Olarindebukunmi@gmail.com" ><i class="fa fa-google"></i></a>
      </div>
-
+-->
      <div class="see-info"> 
     
     <p class="locate"><i class="fa fa-map-marker"></i> Ibadan,Nigeria </p>
