@@ -27,6 +27,7 @@
               <link rel="stylesheet" type="text/css" href="../Resources/css/app.css">
               <link rel="stylesheet" type="text/css" href="../Resources/css/dropdown.css">
               <link rel="stylesheet" type="text/css" href="../Resources/css/form.css">
+              <link rel="stylesheet" type="text/css" href="../Resources/css/home.css">
               <link rel="stylesheet" type="text/css" href="../Resources/css/dashboard.css">
 </head>
 <body>
@@ -52,151 +53,43 @@
 
         <div class="middle">
             <h3>DASHBOARD OVERVIEW</h3>
-           <div class="middle-content">
+         	
+				<section class="see-container" id="container">
 
-           <?php 
-                $countMembers=$dashboardInstance->countMembers();
-            ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                       <h4><i class="fa fa-users"></i> AVAILABLE MembersS</h4>
-                       <p><?php echo $countMembers ?></p>
-                   </div>
-               </div>
+<div class="see-landing-image">
+    <img src="images/bucuxxb.jpg" class="profile-photo" alt="">
+</div>
 
-            <?php 
-                $countOrder=$dashboardInstance->countOrders();
-            ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>TOTAL ORDERS</h4>
-                       <p><?php echo $countOrder ?></p>
-                   </div>
-               </div>
+<!-- ----details abotut me---------->
+<div class="see-landing-details">
+       <p class="profile-name" > Hey there, <br> I'm <span> Olarinde Bukunmi</span>  </p> 
+       <p class="about" id="about">Digital Entrepreneur,Fullstack web developer developer & Software Engineer</p>
+       
+       <!-- social media connections-->
+       <div class="see-connect"> 
+           <a href="https://mobile.facebook.com/bukunmi.olarinde.9" ><i class="fa fa-facebook-f"></i></a>
+           <a href="https://www.Instagram.com/bukunmiiie" ><i class="fa fa-instagram"></i></a> 
+           <a href="https://github.com/Bukunmi-sketch"> <i class="fa fa-github"></i></a> 
+           <a href="https://www.linkedin.com/in/bukunmiiie" ><i class="fa fa-linkedin"></i></a> 
+           <a href="https://www.twitter.com/bukunmiiie" ><i class="fa fa-twitter"></i></a> 
+           <a href="https://www.pinterest.com/bukunmiiie" ><i class="fa fa-pinterest"></i></a> 
+           <a href="mailto:Olarindebukunmi@gmail.com" ><i class="fa fa-google"></i></a>
+     </div>
 
-            <?php 
-                $countUnpaidOrder=$dashboardInstance->countUnpaidOrders();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>UNPAID ORDERS</h4>
-                       <p><?php echo  $countUnpaidOrder ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $countpaidOrder=$dashboardInstance->countpaidOrders();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>PAID ORDERS</h4>
-                       <p><?php echo  $countpaidOrder ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $countKlumpPay=$dashboardInstance->countKlumpPayment();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>KLUMP PAYMENT</h4>
-                       <p><?php echo  $countKlumpPay ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $countflutterwavePay=$dashboardInstance->countFlutterwavePayment();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>FLUTTERWAVE PAYMENT</h4>
-                       <p><?php echo  $countflutterwavePay ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $stmt=$dashboardInstance->totalIncome();
-                $totalincome=$stmt->fetch(PDO::FETCH_ASSOC);
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>TOTAL INCOME</h4>
-                       <p><?php echo $totalincome['amount']; ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $countdelivered=$dashboardInstance->countdeliveredOrders();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>DELIVERED ORDERS</h4>
-                       <p><?php echo  $countdelivered ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $countundelivered=$dashboardInstance->countUndeliveredOrders();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>UNDELIVERED ORDERS</h4>
-                       <p><?php echo  $countundelivered ?></p>
-                   </div>
-               </div>
-
-               <?php 
-                $countcategory=$dashboardInstance->countCategories();
-              ?>
-               <div class="box">
-                 <div class="boxa" style="background-color: <?php echo "{$arr[$key]}" ; ?>;"></div>
-                   <div class="boxb">
-                   <h4>AVAILABLE CATEGORIES</h4>
-                       <p><?php echo  $countcategory ?></p>
-                   </div>
-               </div>
-
-
-           </div>
-           
-           <div class="stats">
-               <p>DATE OF LAST ORDER:
-               <?php 
-                $stmt=$dashboardInstance->lastOrder();
-                $lastdata=$stmt->fetch(PDO::FETCH_ASSOC);
-                $date= date('D,F j Y',  strtotime($lastdata['created_at']));
-               echo "{$date} ordered by {$lastdata['customers_name']}";
-             
-              // // }
-              ?>     
-            </p>
-               <p>HIGHEST PAYMENT MADE: 
-               <?php 
-                $stmt=$dashboardInstance->highestPayment();
-                $highestpay=$stmt->fetch(PDO::FETCH_ASSOC);
-                echo "{$highestpay['amount']} paid by {$highestpay['customers_name']}" 
-              ?> 
-               </p>
-               <p>LOWEST PAYMENT MADE:
-               <?php 
-                $stmt=$dashboardInstance->lowestPayment();
-                $lowestpay=$stmt->fetch(PDO::FETCH_ASSOC);
-                echo "{$lowestpay['amount']} paid by {$lowestpay['customers_name']}" 
-
-              ?> 
-               </p>
-               <p></p>
-           </div>
-
+     <div class="see-info"> 
+    
+    <p class="locate"><i class="fa fa-map-marker"></i> Ibadan,Nigeria </p>
+    <p class="locate"><i class="fa fa-phone"></i> +2348051942341</p> 
+    <p class="locate"><i class="fa fa-envelope"></i> Olarindebukunmi@gmail.com</p>
+    <p class="locate"><i class="fa fa-globe"></i> http://www.bucuzzi.dx.am/b</p>
+    <p class="locate"><i class="fa fa-birthday-cake"></i> September 12 </p> 
+    <p class="locate"><i class="fa fa-heart"></i>music ,football,coding</p>
+    
+    </div>
+</div>
+<!------------- ----end of details about me---------->
+</section>
+       
 </div>
 
 

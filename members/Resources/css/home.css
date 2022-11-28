@@ -1,0 +1,116 @@
+
+
+.see-container{
+    width: 80%;
+ border:1px solid white;
+ box-shadow:0 0 10px #cecece;
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ height: 100%;
+ padding:0 0 50px 0;
+ background-color:var(--color-white);
+ color: var(--color-black);
+ margin:50px;
+    }
+
+
+.see-container .see-landing-image{
+    border:1px solid transparent;
+    margin:-100px 0 0 0;
+}       
+.see-container .see-landing-details{
+    border:1px solid transparent;
+    position:relative;
+    display: flex;
+    margin:100px 40px 40px 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:0 0 50px 0;
+    font-size:2em;
+    font-size:2em;
+   font-weight:bold;
+    width:50%;
+}
+
+.see-container .see-landing-details .profile-name{
+   font-size: 1.3em;
+   width:100%;
+}
+
+.see-landing-details .about{
+    font-family: var(--font-poppins);
+    font-size:1em;
+    width:100%;
+    margin: 30px 0 30px 0;
+ }
+
+.see-landing-details .see-connect{
+  margin: 30px 0 0 0;
+    border:1px solid transparent;
+     display:block;
+     width:100%;
+      display:flex;
+      justify-content:space-between;
+  }
+
+.see-landing-details .see-connect a{
+    color: var(--color-black);
+    border:1px solid #101010 ;
+    padding:9px;
+   border-radius:50%;
+   background:#101010 ;
+  
+  }
+
+.see-landing-details .see-info {
+    font-size: 0.8em;
+   border: 1px solid transparent;
+    position:relative;
+    width:100%;
+    line-height:40px;
+    margin:10px 50px 50px 50px
+   } 
+
+.see-landing-details .see-info p{
+ font-size: 0.7em;
+border: 1px solid transparent;
+}  
+
+@media screen and (max-width:480px) {
+
+    .see-container .see-landing-details{
+        line-height:40px;
+        font-size:1.2em;
+        margin:90px 0 0 0;
+        padding:0 0 20px;
+     }
+    
+     .see-landing-details .see-connect a{
+       font-size: 0.6em;
+       padding:5px;
+     }
+    
+     .see-container .see-landing-image{
+      margin-top:30px;
+    }
+    
+      .profile-photo{
+          width: 200px;
+          height: 200px;
+      }
+    
+      .about-box{
+        padding:10px;
+      }
+    
+      .about-box p{
+        letter-spacing: 0.4px;
+      }
+    
+      .box1 h3{
+        font-size:0.7em;
+      }  
+
+}

@@ -12,7 +12,7 @@ class User{
   }
   
   public function getAllUsers(){
-    $sql="SELECT * FROM administrator";
+    $sql="SELECT * FROM members";
     $stmt=$this->db->prepare($sql);
     $stmt->execute();
     return $stmt;
@@ -31,7 +31,7 @@ class User{
           'email' =>         $returned_row['email'],
           'firstname'=>   $returned_row['firstname'],  
           'lastname' =>   $returned_row['lastname'],
-          'date' =>       $returned_row['reg_date'],
+          'date' =>       $returned_row['date'],
           'rollid' =>      $returned_row['rollid']
           ];
     }catch(PDOException $e){

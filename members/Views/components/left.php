@@ -24,7 +24,7 @@
      <div class="sidebar">
 
         
-        <a href="dashboard"  class="menu-item">
+        <a href="home"  class="menu-item">
             <h3>Home</h3>
         </a>
 
@@ -94,10 +94,6 @@
             <a href="events" class="menu-item"> <h3>Upcoming Events</h3> </a>
             <a href="birthday" class="menu-item"> <h3>View Birthdays</h3> </a>   
          </div>
-
-          <a href="javascript:void(0)" onclick="campreg()" class="menu-item">
-            <h3>Financial Reports</h3>
-          </a>
 
           <div id="campreg" class="dropdown-exams">
            <a href="send-email" class="menu-item"> <h3>Add Tithe</h3> </a>
