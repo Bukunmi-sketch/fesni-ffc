@@ -2,11 +2,11 @@
   session_start();  
   ob_start();
 
-  include '../Includes/inc.php';
+  include '../Includes/autoload.php';
   include './auth/redirect.php';
 
     $sessionid=$_SESSION['id'];   
-    $userInfo=$userInstance->getuserinfo($sessionid);
+    $userInfo=$userInstance->getmemberinfo($sessionid);
     $email =$userInfo['email'];
     $firstname=$userInfo['firstname'];
     $lastname= $userInfo['lastname'];
@@ -20,7 +20,7 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Home,welcome to vlbc</title>
+    <title>Home,welcome <?php echo "{$firstname} {$lastname} ";?></title>
     <?php include '../Includes/metatags.php' ; ?>
 
               <link rel="stylesheet" type="text/css" href="../Resources/css/left.css"> 

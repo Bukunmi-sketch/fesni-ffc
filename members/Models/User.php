@@ -19,9 +19,9 @@ class User{
         }
      
         //get all the details about the admin
-  public function getuserinfo($userid){
+  public function getmemberinfo($userid){
     try{
-        $sql="SELECT * FROM administrator WHERE id=:userid";
+        $sql="SELECT * FROM members WHERE id=:userid";
         $stmt=$this->db->prepare($sql);
         $stmt->bindParam(":userid", $userid);
         $stmt->execute();
@@ -31,9 +31,8 @@ class User{
           'email' =>         $returned_row['email'],
           'firstname'=>   $returned_row['firstname'],  
           'lastname' =>   $returned_row['lastname'],
-          'date' =>      $returned_row['reg_date'],
-          'lastactivetime'=> $returned_row['LastActiveTime'],
-          'lastactivedate' => $returned_row['LastActiveDate']
+          'date' =>       $returned_row['reg_date'],
+          'rollid' =>      $returned_row['rollid']
           ];
     }catch(PDOException $e){
       echo $e->getMessage();

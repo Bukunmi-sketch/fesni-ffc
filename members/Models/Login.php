@@ -15,7 +15,7 @@ require '../Includes/db.inc.php';
 
 
                    //logih users
-   public function login($firstname,$lastname,$memberid){
+   public function login($lastname,$memberid){
     try{
        
          $sql="SELECT * FROM members WHERE lastname =:lastname AND rollid =:memberid";

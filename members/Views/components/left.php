@@ -111,7 +111,7 @@
             <h3>Your Details</h3>
         </a>
 
-        <a href="dashboard?logout=true" class="menu-item">
+        <a href="home?logout=true" class="menu-item">
             <h3>Log out</h3>
         </a>
 

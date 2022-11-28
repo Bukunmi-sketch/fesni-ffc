@@ -24,21 +24,21 @@ $memberid="";
 
 if($_SERVER['REQUEST_METHOD']=="POST"){
        
-       $firstname=$authInstance->validate($_POST['firstname']);
-       $lastname=$_POST['lastname'];
+       $lastname=$authInstance->validate($_POST['lastname']);
        $memberid=$_POST['memberid']; 
       
-       if(empty($firstname) || empty($lastname) || empty($memberid) ){
+       if(empty($lastname) || empty($memberid) ){
             echo "please fill in login details completely";  
        }else{
            //check if the user may be logged in
-           if($logindata=$loginInstance->login($firstname, $lastname, $memberid)){
+           if($logindata=$loginInstance->login($lastname, $memberid)){
                session_start();
                //$authInstance->redirect('main.php');               
                $_SESSION['id']=$logindata['id'];
                $_SESSION['email']=$logindata['email'];
                $_SESSION['firstname']=$logindata['firstname'];
                $_SESSION['lastname']=$logindata['lastname'];
+               $_SESSION['rollid']=$logindata['rollid'];
                $_SESSION["lastactivity"]=time();  
                $_SESSION['loggedin']=true; 
                $_SESSION['lastactivetime']=date("h:ia");; 
