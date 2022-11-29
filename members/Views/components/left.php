@@ -28,7 +28,7 @@
             <h3>Home</h3>
         </a>
 
-        <a href="left.php"  class="menu-item">
+        <a href="levels.php"  class="menu-item">
             <h3>Members</h3>
         </a>
 

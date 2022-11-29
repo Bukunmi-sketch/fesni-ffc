@@ -13,7 +13,7 @@ spl_autoload_register(function($className) {
         
 try {
     $authInstance= new Auth($conn);
-    $userInstance= new User($conn);
+    $memberInstance= new Member($conn);
     $loginInstance= new Login($conn);
     $registerInstance= new Register($conn);
    // $memberInstance = new User\Member($conn);
