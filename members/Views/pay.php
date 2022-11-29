@@ -49,32 +49,10 @@ $ministry = $userInfo['ministry'];
 
             <div class="middle">
                 <h3>BIRTHDAY CELEBRANT IN YOUR LEVEL THIS MONTH ( <?php echo date('M') ; ?> ) </h3>
-                 
-                <?php
-                    $allStmt= $memberInstance->getLevelMembers($fellowship);
-                    $allData=$allStmt->fetchAll(PDO::FETCH_ASSOC);
-                    ?>
-                       <?php  if($allStmt->rowCount() > 0 ): ?>
 
                 <div class="middle-content">
 
-                     <?php foreach($allData as $memberdata): ?>
-                    <div class="box">
-                        <div class="boxa"> <img src="" alt=""></div>
-                        <div class="boxb">
-                            <h4> <?php echo "{$memberdata['firstname']} {$memberdata['lastname']} "; ?> </h4>
-                            <div><?php echo $memberdata['gender']; ?></div>
-                            <div><?php echo $memberdata['ministry']; ?></div>
-                            <div><?php echo $memberdata['department']; ?></div>
-                            <div> <?php echo "{$memberdata['birthmonth']} {$memberdata['birthday']} "; ?> </div>
-                        </div>
-                    </div>
-                    <?php endforeach ?>
-
-                           
-       <?php else: ?>
-            <h4>No member in your level is celebrating his/her birthday this month</h4>
-       <?php endif ?>
+                 <button> Pay with Flutterwave </button>
 
 
                 </div>
