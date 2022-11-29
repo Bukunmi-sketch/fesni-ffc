@@ -6,7 +6,7 @@
   include './auth/redirect.php';
 
     $sessionid=$_SESSION['id'];   
-    $userInfo=$userInstance->getmemberinfo($sessionid);
+    $userInfo=$memberInstance->getmemberinfo($sessionid);
     $email =$userInfo['email'];
     $firstname=$userInfo['firstname'];
     $lastname= $userInfo['lastname'];

@@ -2,14 +2,14 @@
 
 
   include '../Models/Auth.php';  
-  include '../Models/User.php';  
+  include '../Models/Member.php';  
   include '../Models/Login.php';  
 
  
 
-    // create of object of the user class
+    // create of object of the Member class
   $authInstance= new Auth($conn);
-  $userInstance= new User($conn);
+  $memberInstance= new Member($conn);
   $loginInstance= new Login($conn);
   
 

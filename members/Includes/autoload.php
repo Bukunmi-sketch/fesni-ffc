@@ -19,7 +19,7 @@ try {
    // $memberInstance = new User\Member($conn);
     $announceInstance = new Announcement($conn);
     $reportInstance = new Report($conn);
-    $payInstance = new Payment($conn);
+ //   $payInstance = new Payment($conn);
     $notifyInstance = new Notification($conn);
 } catch (Exception $e) {
 echo $e->getMessage(), "\n";

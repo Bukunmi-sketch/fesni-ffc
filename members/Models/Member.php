@@ -29,6 +29,14 @@ class Member
     return $stmt;
   }   
 
+  public function getBirthmembersMembers($level){
+    $query="SELECT * FROM members WHERE fellowships=:level ";
+    $stmt=$this->db->prepare($query);
+    $stmt->bindParam(':level',$level);
+    $stmt->execute();
+    return $stmt;
+  }   
+
   //get all the details about the admin
   public function getmemberinfo($userid)
   {

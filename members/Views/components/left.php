@@ -32,13 +32,7 @@
             <h3>Members</h3>
         </a>
 
-       
-        <div id="myDropdown" class="dropdown-content">
-           <a href="add_member" class="menu-item"> <i class="fa fa-users" aria-hidden="true"></i> <h3>Add members </h3> </a>
-           <a href="all_members" class="menu-item"> <h3>Members details </h3> </a>
-         </div>
-
-         <a href="javascript:void(0)"  class="menu-item" onclick="manage()">
+         <a href="birthlevel"  class="menu-item" onclick="manage()">
             <h3>Your Birthdays</h3>
         </a>
 
