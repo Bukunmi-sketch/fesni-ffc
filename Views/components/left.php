@@ -30,6 +30,7 @@
 
         <a href="Javascript:void(0)"   onclick="myFunction()" class="menu-item">
             <h3>Manage Members </h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
 
        
@@ -40,6 +41,7 @@
 
          <a href="javascript:void(0)"  class="menu-item" onclick="manage()">
             <h3>Ministry/Departments</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
 
         <div id="manage" class="dropdown-content">
@@ -49,7 +51,9 @@
          </div>
 
         <a href="javascript:void(0)"  class="menu-item" onclick="announce()">
+            <span> <i class="fa fa-volume-up" aria-hidden="true"></i> </span>
             <h3>Announcement</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
         <div id="announce" class="dropdown-exams">
            <a href="announcement" class="menu-item"> <h3>Add Announcement</h3> </a>
@@ -58,6 +62,7 @@
 
         <a href="javascript:void(0)" class="menu-item" onclick="exams()">
             <h3>Family Level</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
 
         <div id="exams" class="dropdown-exams">
@@ -68,7 +73,9 @@
        
         <a href="javascript:void(0)" class="menu-item" onclick="visit()">
             <h3>Attendance</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
+
 
         <div id="visit"  class="dropdown-attendance">
            <a href="mark_attendance" class="menu-item"> <h3>Mark Attendance</h3> </a>
@@ -77,6 +84,7 @@
 
         <a href="javascript:void(0)" class="menu-item" onclick="attend()">
             <h3>Visitors</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
 
         <div id="attendance"  class="dropdown-attendance">
@@ -87,6 +95,7 @@
        
          <a href="javascript:void(0)" onclick="members()" class="menu-item">
             <h3>Events & Birthdays</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
        
         <div id="members"  class="dropdown-members">
@@ -96,6 +105,7 @@
 
           <a href="javascript:void(0)" onclick="campreg()" class="menu-item">
             <h3>Financial Reports</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
           </a>
 
           <div id="campreg" class="dropdown-exams">
