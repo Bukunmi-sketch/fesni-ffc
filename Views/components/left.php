@@ -30,7 +30,7 @@
         </a>
 
         <a href="Javascript:void(0)"   onclick="myFunction()" class="menu-item">
-            <span> <i class="fa fa-user-circle-o" aria-hidden="true"></i> </span>
+            <span> <i class="fa fa-meetup" aria-hidden="true"></i> </span>
             <h3>Manage Members </h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -76,7 +76,7 @@
 
        
         <a href="javascript:void(0)" class="menu-item" onclick="visit()">
-        <span>  <i class="fa fa-hand-peace-o" aria-hidden="true"></i> </span>
+        <span>  <i class="fa fa-hand-rock-o" aria-hidden="true"></i> </span>
             <h3>Attendance</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -88,7 +88,7 @@
          </div>
 
         <a href="javascript:void(0)" class="menu-item" onclick="attend()">
-            <span> <i class="fas fa-walking    "></i> </span>
+            <span> <i class="fa fa-walking    "></i> </span>
             <h3>Visitors</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -100,6 +100,7 @@
 
        
          <a href="javascript:void(0)" onclick="members()" class="menu-item">
+            <span> <i class="fas fa-birthday-cake    "></i> </span>
             <h3>Events & Birthdays</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -110,6 +111,7 @@
          </div>
 
           <a href="javascript:void(0)" onclick="campreg()" class="menu-item">
+          <span> <i class="fas fa-money-check-alt    "></i> </span>
             <h3>Financial Reports</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
           </a>
@@ -121,6 +123,7 @@
          </div>
 
          <a href="frontpage.php" class="menu-item">
+           <span> <i class="fa fa-adjust" aria-hidden="true"></i> </span>
             <h3>Manage Front-Page</h3>
           </a>
 
@@ -128,10 +131,12 @@
 <!---------------------------------------------------------- EDIT ADMIN ACCOUNT ------------------------------------------------------->     
         <a href="adminedit" class="menu-item">
        <!--    <span><i class="material-icons">settings</i></span> -->
+       <span> <i class="fas fa-edit    "></i> </span>
             <h3>Edit Admin Account</h3>
         </a>
 
         <a href="dashboard?logout=true" class="menu-item">
+          <span> <i class="fas fa-power-off    "></i> </span>
             <h3>Log out</h3>
         </a>
 

@@ -79,6 +79,7 @@
 
         </div>
    </main>
+   <?php include './components/footer.php' ; ?>
            <script src="../Resources/js/app.js"></script>
            <script src="../Resources/js/sidebar.js"></script>
      </body>
