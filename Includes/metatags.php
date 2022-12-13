@@ -8,6 +8,10 @@ initial-scale=1">
          
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/
 libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+     <link rel='stylsheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/fontawesome.min.css'>
+
+     <link rel='stylsheet' href=' https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/fontawesome.min.css'>
          
          <!--jquery-->
          

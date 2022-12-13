@@ -25,10 +25,12 @@
 
         
         <a href="dashboard"  class="menu-item">
+           <i class="fa fa-address-book" aria-hidden="true"></i>
             <h3>Dashboard</h3>
         </a>
 
         <a href="Javascript:void(0)"   onclick="myFunction()" class="menu-item">
+            <span> <i class="fa fa-user-circle-o" aria-hidden="true"></i> </span>
             <h3>Manage Members </h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -40,6 +42,7 @@
          </div>
 
          <a href="javascript:void(0)"  class="menu-item" onclick="manage()">
+           <span> <i class="fa fa-chain-broken" aria-hidden="true"></i> </span>
             <h3>Ministry/Departments</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -61,6 +64,7 @@
          </div>
 
         <a href="javascript:void(0)" class="menu-item" onclick="exams()">
+           <span> <i class="fa fa-user-secret" aria-hidden="true"></i> </span>
             <h3>Family Level</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -72,6 +76,7 @@
 
        
         <a href="javascript:void(0)" class="menu-item" onclick="visit()">
+        <span>  <i class="fa fa-hand-peace-o" aria-hidden="true"></i> </span>
             <h3>Attendance</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
@@ -83,6 +88,7 @@
          </div>
 
         <a href="javascript:void(0)" class="menu-item" onclick="attend()">
+            <span> <i class="fas fa-walking    "></i> </span>
             <h3>Visitors</h3>
             <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
         </a>
