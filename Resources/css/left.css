@@ -3,8 +3,11 @@ main .container .left{
     height:100vh;
     position: sticky;
     top:0; 
-    background-color:var(--page-header-bgColor-hover);
+   /* background-color:var(--page-header-bgColor-hover);
     border:1px solid var(--page-header-bgColor-hover);
+    */
+   background-color:white;
+   border:1px solid white;
     border: 1px solid transparent;
     margin-left:-5px;
      
@@ -105,7 +108,7 @@ main .container .left .image-removebox{
     font-size: 0.9rem;
     color: var(--page-header-headingColor);
     font-weight: light;
-    font-family:'poppins', sans-serif;
+    font-family:'Montserrat', sans-serif;
 
 }
 
