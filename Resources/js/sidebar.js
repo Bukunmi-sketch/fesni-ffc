@@ -39,3 +39,8 @@ function members(){
 function exams(){
     document.getElementById("exams").classList.toggle("show");
 }
+
+
+function contact(){
+    document.getElementById("contact").classList.toggle("show");
+}

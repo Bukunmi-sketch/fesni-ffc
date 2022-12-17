@@ -122,6 +122,18 @@
            <a href="send-textmsg" class="menu-item"> <h3> Add Donations</h3> </a>
          </div>
 
+         <a href="javascript:void(0)" onclick="contact()" class="menu-item">
+          <span> <i class="fa fa-phone-square" aria-hidden="true"></i> </span>
+            <h3> Contact Members</h3>
+            <span> <i class="fa fa-caret-down" aria-hidden="true"></i> </span>
+          </a>
+
+          <div id="contact" class="dropdown-exams">
+           <a href="send-email" class="menu-item"> <h3> Send Email Messages </h3> </a>
+           <a href="send-textmsg" class="menu-item"> <h3> Send Text Messages </h3> </a>
+           <a href="phone-call" class="menu-item"> <h3> Phone Call Members </h3> </a>
+         </div>
+
          <a href="frontpage.php" class="menu-item">
            <span> <i class="fa fa-adjust" aria-hidden="true"></i> </span>
             <h3>Manage Front-Page</h3>
