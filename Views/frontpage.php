@@ -28,8 +28,8 @@ $name = $firstname . $lastname;
   <link rel="stylesheet" type="text/css" href="../Resources/css/left.css">
   <link rel="stylesheet" type="text/css" href="../Resources/css/app.css">
   <link rel="stylesheet" type="text/css" href="../Resources/css/dropdown.css">
-  <link rel="stylesheet" type="text/css" href="../Resources/css/email.css">
   <link rel="stylesheet" type="text/css" href="../Resources/css/table.css">
+  <link rel="stylesheet" type="text/css" href="../Resources/css/dashboard.css">
 </head>
 
 <body>
@@ -38,108 +38,76 @@ $name = $firstname . $lastname;
     <div class="container">
       <?php include './components/left.php'; ?>
 
+      <?php
+                        $arr=[ 1=>'red', 2=>'orange', 3=>'yellow', 4=>"green", 5=>"blue", 6=>"indigo", 7=>"violet", 8=>"orangered", 9=>"#cecece", 9=>"black" ];
+                        $key=array_rand($arr);
+
+                        $arraycolor=[ 1=>'red', 2=>'orange', 3=>'yellow', 4=>"green", 5=>"blue", 6=>"indigo", 7=>"violet", 8=>"orangered", 9=>"#cecece", 9=>"black" ];
+                        $keycolor=array_rand($arraycolor);
+
+                        $arraycolora=[ 1=>'red', 2=>'orange', 3=>'yellow', 4=>"green", 5=>"blue", 6=>"indigo", 7=>"violet", 8=>"orangered", 9=>"#cecece", 9=>"black" ];
+                        $keycolora=array_rand($arraycolora);
+                        ?>
+
       <div class="middle">
-        <div class="min-sub-container">
-          <div class="spanheader">
-            <span>
-              <h4> Create an Announcement </h4>
-              <p>Annoucement will be marked as active</p>
-            </span>
-            <p><?php echo date("D,F j Y",  strtotime(date('Y M d'))); ?></p>
+        <div class="middle-header"> <button class="editbtn">MANAGE FRONTPAGE</button> </div>
+
+        <div class="middle-content">
+
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arr[$key]}" ; ?>;">Manage Sermon</button>
           </div>
 
-          <form action="#" method="POST">
-            <div class="error"></div>
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Add to Photo Gallery</button>
+          </div>
 
-            <div class="flex-inbox">
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Manage officers in  charge</button>
+          </div>
 
-              <div class="images">
-                <label for="productImage">Add Image</label>
-                <div id="upload">
-                  <img src="" onClick="trigger()" id="profileDisplay">
-                  <input type="file" name="file_image" onchange="displayImage(this)" id="capture" style="display:none">
-                  <i class="fa fa-camera" id="camera"></i>
-                </div>
-              </div>
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Manage Blogs Post</button>
+          </div>
+
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arr[$key]}" ; ?>;">Register FFC Members</button>
+          </div>
+          
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Edit first Header</button>
+          </div>
+
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Edit Second Header</button>
+          </div>
+
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Edit History</button>
+          </div>
+
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Manage Advertisement</button>
+          </div>
+
+          <div class="box">
+            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Others</button>
+          </div>
 
 
-              <div class="inputbox-details">
-                <label for="ministry">Announcement for</label>
-                <select name="typefor">
-                  <?php
-                  $stmt = $unitInstance->getunitMinistry();
-                  $unitData = $stmt->fetchAll(PDO::FETCH_ASSOC);
-                  if ($stmt->rowCount() > 0) :
-                  ?>
-                    <?php foreach ($unitData as $unit) : ?>
-                      <option value="<?php echo  "{$unit['name']}"; ?> "><?php echo  "{$unit['name']}"; ?> </option>
-                    <?php endforeach ?>
-                  <?php else : ?>
-                    <option value="">No unit, create Now!</option>
-                  <?php endif ?>
-                </select>
-              </div>
-            </div>
 
 
 
-            <div class="inputbox-details">
-              <label for="title">Title</label>
-              <input type="text" name="title" placeholder="" style="text-transform: uppercase;" value=" " autofocus>
-            </div>
 
-            <div class="inputbox-details">
-              <label for="title">Content</label>
-              <textarea name="content" value="" required> </textarea>
-            </div>
 
-            <div class="button-details">
-              <button class="submit" name="create">Create Announcement</button>
-              <input type="hidden" name="creator_name" value=<?php echo $name; ?>>
-              <input type="hidden" name="creator_id" value=<?php echo $sessionid; ?>>
-            </div>
 
-          </form>
+
+
 
         </div>
 
-        <?php
-        $stmt = $unitInstance->getunitMinistry();
-        $unitData = $stmt->fetchAll(PDO::FETCH_ASSOC);
-
-        ?>
-        <?php if ($stmt->rowCount() > 0) : ?>
-
-
-          <div class="table-container">
-            <table>
-              <tr>
-                <th>Manage</th>
-                <th>unit Name</th>
-                <th>Created by</th>
-                <th>Created_date</th>
-
-              </tr>
-              <?php foreach ($unitData as $unit) : ?>
-                <tr>
-                  <td> <button class="deletebtn"> Delete </button></td>
-                  <td> <?php echo  "{$unit['name']}"; ?> </td>
-                  <td> <?php echo  "{$unit['added_by']}"; ?> </td>
-                  <td> <?php echo date("D,F j Y",  strtotime($unit['created_at'])); ?> </td>
-                </tr>
-              <?php endforeach ?>
-            </table>
-
-          <?php else : ?>
-            <div class="no-value" style="text-align:center">
-              <h4>you have not created any announcement</h4>
-            </div>
-          <?php endif ?>
-
-          </div>
 
       </div>
-
 
 
     </div>
