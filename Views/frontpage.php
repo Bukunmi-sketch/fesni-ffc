@@ -55,43 +55,39 @@ $name = $firstname . $lastname;
         <div class="middle-content">
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arr[$key]}" ; ?>;">Manage Sermon</button>
+            <a href="sermon"> <button class="editbtn" style="background-color: <?php echo "{$arr[$key]}" ; ?>;">Manage Sermon</button></a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Add to Photo Gallery</button>
+          <a href="sermon"> <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Add to Photo Gallery</button></a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Manage officers in  charge</button>
+          <a href="sermon"> <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Manage officers in  charge</button></a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Manage Blogs Post</button>
+          <a href="sermon">  <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Manage Blogs Post</button></a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arr[$key]}" ; ?>;">Register FFC Members</button>
+          <a href="sermon">  <button class="editbtn" style="background-color: <?php echo "{$arr[$key]}" ; ?>;">Register FFC Members</button> </a>
           </div>
           
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Edit first Header</button>
+          <a href="sermon"> <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Edit first Header</button> </a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Edit Second Header</button>
+          <a href="sermon"> <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Edit History</button> </a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Edit History</button>
+          <a href="sermon">   <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Manage Advertisement</button> </a>
           </div>
 
           <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolora[$keycolora]}" ; ?>;">Manage Advertisement</button>
-          </div>
-
-          <div class="box">
-            <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Others</button>
+          <a href="sermon"> <button class="editbtn" style="background-color: <?php echo "{$arraycolor[$keycolor]}" ; ?>;">Others</button> </a>
           </div>
 
 
